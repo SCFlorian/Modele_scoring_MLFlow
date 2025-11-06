@@ -1,0 +1,12 @@
+# Ignorer tous les fichiers csv
+*.csv
+# Ignorer les fichiers txt
+*.txt
+# Ignorer les fichiers png
+*.png
+# Ignorer les fichier pkl
+*.pkl
+# Ignorer le dossier mlruns
+mlruns/
+# Ignorer le sous-dossier __pycache__
+__pycache__/
