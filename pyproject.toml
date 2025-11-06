@@ -1,0 +1,31 @@
+[project]
+name = "modele-scoring-mlflow"
+version = "0.1.0"
+description = "Mise en place d'un modèle de scoring avec un suivi MLFlow"
+authors = [
+    {name = "Florian Schorer",email = "schorer.florian@me.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.3.3,<3.0.0)",
+    "numpy (>=2.3.4,<3.0.0)",
+    "scikit-learn (>=1.7.2,<2.0.0)",
+    "matplotlib (>=3.10.7,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "jupyter (>=1.1.1,<2.0.0)",
+    "notebook (>=7.4.7,<8.0.0)",
+    "pip (>=25.3,<26.0)",
+    "missingno (>=0.5.2,<0.6.0)",
+    "itables (>=2.5.2,<3.0.0)",
+    "mlflow (>=3.5.1,<4.0.0)",
+    "xgboost (>=3.1.1,<4.0.0)",
+    "lightgbm (>=4.6.0,<5.0.0)",
+    "imblearn (>=0.0,<0.1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
