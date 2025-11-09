@@ -5,6 +5,7 @@ L'objectif de ce projet est de réaliser un modèle de scoring et un suivi sur M
 ### Problématique
 
 - Construire et optimiser un modèle de scoring qui donnera une prédiction sur la probabilité de faillite d'un client de façon automatique.
+- Analyser les features qui contribuent le plus au modèle, d’une manière générale (feature importance globale) et au niveau d’un client (feature importance locale), afin, dans un soucis de transparence, de permettre à un chargé d’études de mieux comprendre le score attribué par le modèle.
 - Mettre en œuvre une approche globale MLOps de bout en bout, du tracking des expérimentations à la pré-production du modèle.
 
 ### Données utilisées
@@ -21,11 +22,12 @@ https://www.kaggle.com/c/home-credit-default-risk/data
 │   ├── Raw/          # Fichiers à ajouter car trop lourd pour GitHub
 │   └── Processed/    # Fichiers à ajouter car trop lourd pour GitHub
 │
-├── mlruns            # Dossiers à ajouter après avoir cloné le projet
+├── mlruns            # Dossier ajouté après avoir cloné le projet
 ├── notebooks/        # Étapes du projet sous forme de notebooks
 │   ├── notebook_1_analyse_exploratoire.ipynb
 │   ├── notebook_2_feature_engineering.ipynb
 │   ├── notebook_3_modele_classification.ipynb
+│   ├── notebook_4_modelisation_cout_metier.ipynb
 │
 ├── src/        
 │   ├── build_dataset.py
@@ -58,3 +60,26 @@ code .
 	2.	Appuyez sur Ctrl+Shift+P (Windows/Linux) ou Cmd+Shift+P (Mac).
 	4.	Recherchez “Python: Select Interpreter”.
 	5.	Sélectionnez l’environnement créé par Poetry ou celui dans lequel tu as installé le projet.
+
+### Lancement du MLFlow
+1. Dans votre terminal, sur votre dossier de travail :
+```
+mlflow ui
+```
+2. Dans un navigateur, coller le lien indiqué :
+```
+http://127.0.0.1:5000
+```
+3. Vous pouvez ensuite naviguer à travers vos "experiments" :
+
+### Comparaison des modèles avec le seuil optimal
+
+### Feature importance avec la technique SHAP sur le modèle de LightGBM
+
+- Summary Plot :
+
+- Waterfall Plot :
+
+
+
+
