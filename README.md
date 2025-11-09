@@ -74,12 +74,18 @@ http://127.0.0.1:5000
 
 ### Comparaison des modèles avec le seuil optimal
 
+<img width="1327" height="774" alt="Capture d’écran 2025-11-09 à 12 47 25" src="https://github.com/user-attachments/assets/34482b00-2c51-4900-97ac-ba3e87ac0fef" />
+
 ### Feature importance avec la technique SHAP sur le modèle de LightGBM
 
 - Summary Plot :
 
+<img width="810" height="740" alt="image" src="https://github.com/user-attachments/assets/06fb1d1c-8e8c-44c9-9877-a7885039df97" />
+
+
 - Waterfall Plot :
 
+<img width="975" height="600" alt="image" src="https://github.com/user-attachments/assets/67fc589f-d6fb-4e6d-9b8c-eaec3ecb9696" />
 
 
 
